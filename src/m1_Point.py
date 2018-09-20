@@ -90,7 +90,7 @@ class Point(object):
         return self.dt
 
     def closer_to(self, p2, p3):
-        if p2.get_distance_from(self) >= p3.get_distance_from(self):
+        if p2.get_distance_from(self) > p3.get_distance_from(self):
             return p3
         else:
             return p2
